@@ -6,8 +6,8 @@ import java.util.ArrayList;
 class Main {
 
     Main() {
+        // Skapar ArrayList av typen Växter och lägger till objekt av subklasser
         ArrayList<Växter> plants = new ArrayList<>();
-
         plants.add(new Kaktus("Igge", 0.2));
         plants.add(new KöttätandeVäxt("Meatloaf", 0.7));
         plants.add(new Palm("Laura", 5));
@@ -26,6 +26,7 @@ class Main {
 
                 for (Växter plant : plants) {
                     if (userInput.equalsIgnoreCase(plant.getName())) {
+                        // Metoder av samma typ anropas och får olika värden
                         JOptionPane.showMessageDialog(null, plant.getName() + " behöver " + plant.getWaterAmount() + " l " + plant.getLiquidType());
                         found = true;
                         break;

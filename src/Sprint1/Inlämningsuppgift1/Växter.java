@@ -1,6 +1,8 @@
 package Sprint1.Inlämningsuppgift1;
 
 public abstract class Växter implements vätskebehov {
+
+    // Inkapsling av instansvariabler
     private String name;
     private double length;
 
