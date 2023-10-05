@@ -20,5 +20,3 @@ public class Kaktus extends Växter {
         return 0.02;
     }
 }
-
-

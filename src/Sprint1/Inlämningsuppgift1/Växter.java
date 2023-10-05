@@ -23,4 +23,3 @@ public abstract class Växter implements vätskebehov {
 
 
 
-
