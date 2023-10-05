@@ -26,7 +26,7 @@ class Main {
 
                 for (Växter plant : plants) {
                     if (userInput.equalsIgnoreCase(plant.getName())) {
-                        // Metoder av samma typ anropas och får olika värden genom polymorfism
+                        // Metodanrop av samma typ får olika värden genom polymorfism
                         JOptionPane.showMessageDialog(null, plant.getName() + " behöver " + plant.getLiquidAmount() + " l " + plant.getLiquidType());
                         foundPlant = true;
                         break;
