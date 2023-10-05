@@ -1,5 +1,6 @@
 package Sprint1.Inlämningsuppgift1;
 
+// Kaktus ärver Växter och blir en subklass till superklassen Växter
 public class Kaktus extends Växter {
 
     String liquidType = "mineralvatten";
