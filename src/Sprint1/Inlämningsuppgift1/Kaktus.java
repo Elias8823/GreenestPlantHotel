@@ -17,7 +17,7 @@ public class Kaktus extends Växter {
     }
 
     @Override
-    public double getWaterAmount() {
+    public double getLiquidAmount() {
         return 0.02;
     }
 }

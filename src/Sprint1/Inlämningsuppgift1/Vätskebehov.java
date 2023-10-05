@@ -3,6 +3,6 @@ package Sprint1.Inlämningsuppgift1;
 interface vätskebehov {
     String getLiquidType();
 
-    double getWaterAmount();
+    double getLiquidAmount();
 }
 

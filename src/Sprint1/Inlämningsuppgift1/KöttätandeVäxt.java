@@ -16,7 +16,7 @@ public class KöttätandeVäxt extends Växter {
     }
 
     @Override
-    public double getWaterAmount() {
+    public double getLiquidAmount() {
         return 0.1 + (0.2 * getLength());
     }
 }

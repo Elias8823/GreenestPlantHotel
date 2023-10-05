@@ -18,7 +18,7 @@ class Main {
 
         do {
             wrongInput = false;
-            boolean found = false;
+            boolean foundPlant = false;
 
             try {
 
@@ -26,13 +26,13 @@ class Main {
 
                 for (Växter plant : plants) {
                     if (userInput.equalsIgnoreCase(plant.getName())) {
-                        // Metoder av samma typ anropas och får olika värden
-                        JOptionPane.showMessageDialog(null, plant.getName() + " behöver " + plant.getWaterAmount() + " l " + plant.getLiquidType());
-                        found = true;
+                        // Metoder av samma typ anropas och får olika värden genom polymorfism
+                        JOptionPane.showMessageDialog(null, plant.getName() + " behöver " + plant.getLiquidAmount() + " l " + plant.getLiquidType());
+                        foundPlant = true;
                         break;
                     }
                 }
-                if (!found) {
+                if (!foundPlant) {
                     JOptionPane.showMessageDialog(null, "Växtnamnet existerar inte. Försök igen");
                     wrongInput = true;
                 }
