@@ -6,4 +6,3 @@ interface vätskebehov {
     double getWaterAmount();
 }
 
-
